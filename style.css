@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --pale-violet:hsl(276, 100%, 81%);
+    --moderate-violet:hsl(276, 55%, 52%);
+    --desaturated-dark-violet:hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+--White: hsl(0, 0%, 100%);
+--app-background: hsl(270, 20%, 96%);
+--submit-button-background: hsl(271, 36%, 24%);
+--radio-button-outline: hsl(289, 100%, 72%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--app-background);
+}
+
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-color: var(--app-background);
+    font-size: 16px;
+}
+
+.left{
+    width: 400px;
+    min-height: 90vh;
+    background-color: var(--moderate-violet);
+    position: absolute;
+    top: 0;
+    left: -5%;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+}
+
+.right{
+    width: 400px;
+    min-height: 90vh;
+    background-color: var(--Dark-Grayish-Violet);
+    opacity: .1;
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+}
+
+.phone{
+    width: 250px;
+    background-color: var(--White);
+    border-radius: 20px;
+    font-size: 7px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.ph-screen, .ph-head{
+    margin: 10px;
+}
+
+.ph-head{
+    height: 4rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background:linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.nord{
+    width: 150px;
+    height: 20px;
+    background-color: var(--White);
+    position: absolute;
+    top: -5px;
+    border-radius: 30px;
+}
+
+.nord-content img{
+    position: absolute;
+    left: 30px;
+    top: 1.5rem;
+}
+
+.nord-title{
+    margin-top: 10px;
+    color: var(--White);
+}
+
+.ph-screen{
+    background-color: var(--app-background);
+}
+
+.l{
+ width: 160px;
+ background-color: var(--Grayish-Blue);
+ border-radius: 15px;
+ padding: 10px;
+ margin: 10px;
+}
+
+.l-dollar{
+    width: 160px;
+ background: linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+ border-radius: 15px;
+ padding: 10px;
+ margin: 10px;
+ color: var(--White);
+}
+
+.r{
+    width: 160px;
+    background-color: var(--White);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30%;
+}
+
+.r-img{
+    margin-left: 57%;
+}
+
+.r-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.textbox{
+    font-size: 7px;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+
+.c{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    right: 19px;
+    font-size: 2rem;
+}
+
+.content{
+    max-width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+
+
+@media (max-width:500px) {
+    
+  .left{
+    left: -30%;
+    min-height: 70vh;
+  }
+
+  .right{
+    min-height: 40vh;
+    width: 100%;
+    right: -40%;
+    top: 90%;
+  }
+
+  .phone{
+    left: 30%;
+  }
+
+  .content{
+    max-width: 350px;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+}
